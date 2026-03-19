@@ -13,4 +13,6 @@ if img is None:
     print("错误：无法读取图片，请检查图片路径和文件名")
     exit()
 print("图片读取成功！")
+cv2.imwrite("test_output.jpg", img)
+print("图片已保存为 test_output.jpg，可在文件夹中查看验证")
 print("="*50)
